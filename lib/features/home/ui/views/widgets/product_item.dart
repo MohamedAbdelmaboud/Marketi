@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:market/core/themes/colors.dart';
 import 'package:market/core/themes/styles.dart';
-import 'package:market/features/home/ui/views/home_view.dart';
+import 'package:market/features/home/data/product_model.dart';
 import 'package:market/features/home/ui/views/widgets/favourite_button.dart';
 
 import 'add_button.dart';
@@ -9,8 +9,11 @@ import 'discount_container.dart';
 
 class ProductItem extends StatelessWidget {
   const ProductItem({
-    super.key,
-  });
+    Key? key,
+    required this.productModel,
+  }) : super(key: key);
+
+  final ProductModel productModel;
 
   @override
   Widget build(BuildContext context) {
@@ -45,14 +48,14 @@ class ProductItem extends StatelessWidget {
                       color: lightBlue.withOpacity(0.8),
                     ),
                     child: Image.asset(
-                      'assets/images/Air_Buds_Pic.png',
+                      productModel.imagePath,
                     ),
                   ),
-                  const Visibility(visible: false, child: DiscountContainer()),
-                  const Positioned(
-                    right: 5,
-                    top: 5,
-                    child: FavouriteButton())
+                  Visibility(
+                    visible: productModel.hasDiscount,
+                    child: const DiscountContainer(),
+                  ),
+                  const Positioned(right: 5, top: 5, child: FavouriteButton())
                 ],
               ),
             ),
@@ -63,7 +66,7 @@ class ProductItem extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  '799 LE',
+                  '${productModel.price} LE',
                   style: Styles.textStyle12.copyWith(
                     color: seconderyColor,
                     fontWeight: FontWeight.w600,
@@ -80,7 +83,7 @@ class ProductItem extends StatelessWidget {
                       width: 3,
                     ),
                     Text(
-                      '4.9',
+                      '${productModel.rating}',
                       style: Styles.textStyle12.copyWith(
                         color: seconderyColor,
                         fontWeight: FontWeight.w500,
@@ -95,7 +98,7 @@ class ProductItem extends StatelessWidget {
               child: Row(
                 children: [
                   Text(
-                    'Black JBL Airbods',
+                    productModel.title,
                     style: Styles.textStyle12.copyWith(
                       color: seconderyColor,
                       fontWeight: FontWeight.w500,

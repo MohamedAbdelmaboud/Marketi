@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:market/core/themes/colors.dart';
 import 'package:market/core/themes/styles.dart';
 import 'package:market/features/Auth/otp/ui/views/widgets/app_bar.dart';
+import 'package:market/features/home/data/product_model.dart';
 import 'package:market/features/home/ui/views/widgets/serach_field.dart';
 
 import 'widgets/product_item.dart';
@@ -37,7 +38,7 @@ class HomeView extends StatelessWidget {
                       crossAxisSpacing: 10),
                   itemCount: 10,
                   itemBuilder: (BuildContext context, int index) {
-                    return const ProductItem();
+                    return  ProductItem(productModel: products[index],);
                   },
                 ),
               ),
