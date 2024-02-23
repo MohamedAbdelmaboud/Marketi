@@ -4,9 +4,10 @@ import 'package:market/core/themes/styles.dart';
 
 PreferredSizeWidget appBar(BuildContext context, String title) {
   return AppBar(
-    title: Text(title, style: Styles.textStyle16),
+    title: Text(title, style: Styles.textStyle20.copyWith(color: seconderyColor)),
     backgroundColor: Colors.white,
     elevation: 0,
+    centerTitle: true,
     leading: Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
