@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:market/core/constants/assets.dart';
-import 'package:market/core/widgets/svg_picture.dart';
+import 'package:market/core/widgets/svg_icon.dart';
 
 class IconsRow extends StatelessWidget {
   const IconsRow({
@@ -10,13 +10,16 @@ class IconsRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisSize: MainAxisSize.min,
       children: [
-        SvgIcon(path: Assets.assetsImagesGoogleIcon),
-        Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16.0),
-            child: SvgIcon(path: Assets.assetsImagesAppleIcon)),
-        SvgIcon(path: Assets.assetsImagesFacebokIcon),
+        SvgIcon(
+          path: Assets.assetsImagesIcons8Google,
+        ),
+        SvgIcon(
+          path: Assets.assetsImagesIcons8Facebook,
+        ),
+        SvgIcon(path: Assets.assetsImagesIcons8Twitterx),
+        SvgIcon(path: Assets.assetsImagesIcons8Github)
       ],
     );
   }

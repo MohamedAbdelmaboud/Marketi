@@ -25,7 +25,7 @@ class CustomButton extends StatelessWidget {
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
             backgroundColor: backgroundColor,
             elevation: 10,
-            fixedSize: Size(MediaQuery.of(context).size.width, 40)),
+            fixedSize: Size(MediaQuery.of(context).size.width * 0.85, 40)),
         child: isLoading
             ? const SpinKitDualRing(
                 color: Colors.white,

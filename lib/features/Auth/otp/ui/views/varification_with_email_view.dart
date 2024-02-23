@@ -58,7 +58,7 @@ class _VarificationEmailViewState extends State<VarificationEmailView> {
               TextButton(
                   child: Text(
                     'Resend Code',
-                    style: Styles.textStyle16.copyWith(color: buttonColor),
+                    style: Styles.textStyle16.copyWith(color: seconderyColor),
                   ),
                   onPressed: () {})
             ],

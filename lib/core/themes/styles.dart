@@ -9,6 +9,7 @@ abstract class Styles {
   );
   static const textStyle20 = TextStyle(
     fontSize: 20,
+    color: primaryColor,
     fontWeight: FontWeight.w600,
   );
   static const textStyle14 = TextStyle(
@@ -18,7 +19,7 @@ abstract class Styles {
   );
   static const textStyle12 = TextStyle(
     fontSize: 12,
-    color: buttonColor,
+    color: primaryColor,
     fontWeight: FontWeight.w500,
   );
   static const textStyle16 = TextStyle(

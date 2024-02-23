@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:market/core/constants/assets.dart';
 import 'package:market/core/routes/routes.dart';
 import 'package:market/core/themes/colors.dart';
@@ -44,6 +45,14 @@ class _LoginBodyState extends State<LoginBody> {
               width: 272,
               height: 232,
             ),
+            Text(
+              'Login to continue',
+              style: GoogleFonts.pacifico(
+                fontSize: 20,
+                color: primaryColor,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 14),
               child: CustomTextFromField(
@@ -59,7 +68,7 @@ class _LoginBodyState extends State<LoginBody> {
               ),
             ),
             const SizedBox(
-              height: 14,
+              height: 7,
             ),
             CustomTextFromField(
               validator: (value) {
@@ -78,15 +87,19 @@ class _LoginBodyState extends State<LoginBody> {
               suffixIcon: Icons.visibility,
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 9.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 9.0, vertical: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
+                      const SizedBox(
+                        width: 4,
+                      ),
                       Checkbox(
-                        activeColor: buttonColor,
+                        activeColor: primaryColor,
                         value: checkBoxVAlue,
                         onChanged: (newValue) {
                           setState(() {
@@ -109,9 +122,9 @@ class _LoginBodyState extends State<LoginBody> {
                         Navigator.pushNamed(
                             context, Routes.forgetPasswordWithPhone);
                       },
-                      child: const Text(
+                      child: Text(
                         'Forgot Password?',
-                        style: Styles.textStyle12,
+                        style: Styles.textStyle14.copyWith(color: Colors.blue),
                       ))
                 ],
               ),
@@ -132,7 +145,7 @@ class _LoginBodyState extends State<LoginBody> {
               child: Text(
                 'Or Continue With',
                 style: TextStyle(
-                  fontSize: 12,
+                  fontSize: 14,
                   color: navyColor,
                   fontWeight: FontWeight.w500,
                 ),

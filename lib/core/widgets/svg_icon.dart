@@ -6,10 +6,13 @@ class SvgIcon extends StatelessWidget {
   final String path;
   @override
   Widget build(BuildContext context) {
-    return SvgPicture.asset(
-      path,
-      width: 40,
-      height: 40,
+    return Padding(
+      padding: const EdgeInsets.only(right:10.0),
+      child: SvgPicture.asset(
+        path,
+        width: 40,
+        height: 40,
+      ),
     );
   }
 }

@@ -23,8 +23,8 @@ class CustomColumn extends StatelessWidget {
                 Text(
                   upperText,
                   style: const TextStyle(
-                    fontSize: 12,
-                    color: primaryColor,
+                    fontSize: 14,
+                    color: seconderyColor,
                   ),
                 ),
               ],

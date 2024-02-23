@@ -30,7 +30,7 @@ class _CustomTextFromFieldState extends State<CustomTextFromField> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 22.0),
+      padding: const EdgeInsets.symmetric(horizontal: 18.0),
       child: TextFormField(
           // inputFormatters: [],
           keyboardType: widget.keyboardType,
@@ -41,7 +41,7 @@ class _CustomTextFromFieldState extends State<CustomTextFromField> {
             prefixIcon: Icon(
               widget.prefixIcon,
               size: widget.iconSize,
-              color: primaryColor,
+              color: widget.iconColor,
             ),
             suffixIcon: widget.suffixIcon != null
                 ? IconButton(
@@ -54,7 +54,7 @@ class _CustomTextFromFieldState extends State<CustomTextFromField> {
                             Icons.visibility_off,
                             size: widget.iconSize,
                           ),
-                    color: primaryColor,
+                    color: seconderyColor,
                     onPressed: () {
                       setState(() {
                         widget.obscureText = !widget.obscureText;
@@ -63,7 +63,7 @@ class _CustomTextFromFieldState extends State<CustomTextFromField> {
                   )
                 : null,
             hintText: widget.hintText,
-            hintStyle: GoogleFonts.poppins(
+            hintStyle: GoogleFonts.montserrat(
               color: const Color(0xFF919AAB),
               fontSize: 12,
               fontWeight: FontWeight.w400,

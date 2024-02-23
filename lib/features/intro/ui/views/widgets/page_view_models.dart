@@ -7,9 +7,9 @@ import 'package:market/core/constants/assets.dart';
 PageDecoration buildPageDecoration() {
   return PageDecoration(
     bodyAlignment: Alignment.center,
-    bodyTextStyle: GoogleFonts.poppins(
+    bodyTextStyle: GoogleFonts.montserrat(
       color: const Color(0xff001640),
-      fontSize: 14,
+      fontSize: 18,
     ),
   );
 }

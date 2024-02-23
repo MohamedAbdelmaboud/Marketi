@@ -59,7 +59,7 @@ class _VerificationPhoneViewState extends State<VerificationPhoneView> {
               TextButton(
                   child: Text(
                     'Resend Code',
-                    style: Styles.textStyle16.copyWith(color: buttonColor),
+                    style: Styles.textStyle16.copyWith(color: seconderyColor),
                   ),
                   onPressed: () {})
             ],

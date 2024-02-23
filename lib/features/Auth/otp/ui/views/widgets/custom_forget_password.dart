@@ -78,7 +78,7 @@ class CustomForgetPassword extends StatelessWidget {
             },
             child: Text(
               hiddenText ?? '',
-            style: Styles.textStyle16.copyWith(color: buttonColor),
+              style: Styles.textStyle16.copyWith(color: seconderyColor),
             ),
           )
         ],

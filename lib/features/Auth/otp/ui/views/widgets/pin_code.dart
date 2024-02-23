@@ -28,12 +28,11 @@ class PinCode extends StatelessWidget {
       },
       pinTheme: PinTheme(
           inactiveColor: const Color(0xB2B2CCFF),
-          activeColor: buttonColor,
+          activeColor: seconderyColor,
           shape: PinCodeFieldShape.box,
           fieldWidth: 64,
           fieldHeight: 64,
-          fieldOuterPadding:
-              const EdgeInsets.symmetric(horizontal: 8),
+          fieldOuterPadding: const EdgeInsets.symmetric(horizontal: 8),
           borderRadius: BorderRadius.circular(8)),
     );
   }
