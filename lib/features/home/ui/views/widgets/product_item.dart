@@ -97,11 +97,16 @@ class ProductItem extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 5.0),
               child: Row(
                 children: [
-                  Text(
-                    productModel.title,
-                    style: Styles.textStyle12.copyWith(
-                      color: seconderyColor,
-                      fontWeight: FontWeight.w500,
+                  SizedBox(
+                    width: 165,
+                    child: Text(
+                      productModel.title,
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 1,    
+                      style: Styles.textStyle12.copyWith(
+                        color: seconderyColor,
+                        fontWeight: FontWeight.w400,
+                      ),
                     ),
                   ),
                 ],
