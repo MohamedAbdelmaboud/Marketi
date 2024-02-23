@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:market/core/constants/colors.dart';
 import 'package:market/core/routes/routes.dart';
+import 'package:market/core/themes/colors.dart';
+import 'package:market/core/themes/styles.dart';
 import 'package:market/core/utils/extensions.dart';
-import 'package:market/core/widgets/componants/custom_text.dart';
 import 'package:market/core/widgets/custom_button.dart';
 import 'package:market/core/widgets/custom_text_form_field.dart';
 import 'package:market/features/Auth/otp/ui/views/widgets/app_bar.dart';
@@ -45,10 +45,9 @@ class CustomForgetPassword extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 47, vertical: 22),
-            child: CustomText(
-              color: navyColor,
-              fontSize: 14,
-              text: description,
+            child: Text(
+              description,
+              style: Styles.textStyle14,
             ),
           ),
           CustomColumn(
@@ -77,11 +76,9 @@ class CustomForgetPassword extends StatelessWidget {
             onPressed: () {
               Navigator.pushNamed(context, Routes.forgetPasswordWithEmail);
             },
-            child: CustomText(
-              text: hiddenText ?? '',
-              fontSize: 16,
-              color: buttonColor,
-              fontWeight: FontWeight.w500,
+            child: Text(
+              hiddenText ?? '',
+            style: Styles.textStyle16.copyWith(color: buttonColor),
             ),
           )
         ],

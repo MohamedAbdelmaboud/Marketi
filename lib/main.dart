@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:market/core/routes/routes.dart';
+import 'package:market/core/themes/light_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: Routes.splash,
       routes: routes,
+      theme: lightTheme,
     );
   }
 }

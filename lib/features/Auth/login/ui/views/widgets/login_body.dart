@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:market/core/constants/assets.dart';
-import 'package:market/core/constants/colors.dart';
 import 'package:market/core/routes/routes.dart';
+import 'package:market/core/themes/colors.dart';
+import 'package:market/core/themes/styles.dart';
 import 'package:market/core/utils/extensions.dart';
-import 'package:market/core/widgets/componants/custom_text.dart';
 import 'package:market/core/widgets/custom_button.dart';
 import 'package:market/core/widgets/custom_text_form_field.dart';
 import 'package:market/core/widgets/icons_row.dart';
@@ -94,11 +94,13 @@ class _LoginBodyState extends State<LoginBody> {
                           });
                         },
                       ),
-                      const CustomText(
-                        text: 'Remember Me',
-                        fontSize: 12,
-                        color: navyColor,
-                        fontWeight: FontWeight.w500,
+                      const Text(
+                        'Remember Me',
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: navyColor,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
                     ],
                   ),
@@ -107,11 +109,9 @@ class _LoginBodyState extends State<LoginBody> {
                         Navigator.pushNamed(
                             context, Routes.forgetPasswordWithPhone);
                       },
-                      child: const CustomText(
-                        text: 'Forgot Password?',
-                        fontSize: 12,
-                        color: buttonColor,
-                        fontWeight: FontWeight.w500,
+                      child: const Text(
+                        'Forgot Password?',
+                        style: Styles.textStyle12,
                       ))
                 ],
               ),
@@ -129,11 +129,13 @@ class _LoginBodyState extends State<LoginBody> {
                 }),
             const Padding(
               padding: EdgeInsets.all(14.0),
-              child: CustomText(
-                text: 'Or Continue With',
-                fontSize: 12,
-                color: navyColor,
-                fontWeight: FontWeight.w500,
+              child: Text(
+                'Or Continue With',
+                style: TextStyle(
+                  fontSize: 12,
+                  color: navyColor,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
             ),
             const IconsRow(),

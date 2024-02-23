@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:market/core/constants/colors.dart';
 import 'package:market/core/routes/routes.dart';
-import 'package:market/core/widgets/componants/custom_text.dart';
+import 'package:market/core/themes/styles.dart';
 
 class RegisterRow extends StatelessWidget {
   const RegisterRow({
@@ -13,22 +12,19 @@ class RegisterRow extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const CustomText(
-          text: 'Are you new in Marketi ',
-          fontSize: 12,
-          color: navyColor,
-          fontWeight: FontWeight.w500,
+        const Text(
+          "Don't have an account?",
+          style: Styles.textStyle14,
         ),
         TextButton(
-            onPressed: () {
-              Navigator.pushNamed(context, Routes.register);
-            },
-            child: const CustomText(
-              text: 'Register?',
-              fontSize: 12,
-              color: buttonColor,
-              fontWeight: FontWeight.w500,
-            ))
+          onPressed: () {
+            Navigator.pushNamed(context, Routes.register);
+          },
+          child: Text(
+            'sign up',
+            style: Styles.textStyle14.copyWith(color: Colors.blue),
+          ),
+        ),
       ],
     );
   }

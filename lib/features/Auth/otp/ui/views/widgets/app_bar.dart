@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:market/core/constants/colors.dart';
-import 'package:market/core/widgets/componants/custom_text.dart';
+import 'package:market/core/themes/colors.dart';
+import 'package:market/core/themes/styles.dart';
 
 PreferredSizeWidget appBar(BuildContext context, String title) {
   return AppBar(
-    title: CustomText(text: title, fontSize: 16, color: navyColor),
+    title: Text(title, style: Styles.textStyle16),
     backgroundColor: Colors.white,
     elevation: 0,
     leading: Padding(

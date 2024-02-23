@@ -1,27 +1,40 @@
 import 'package:flutter/material.dart';
-import 'package:market/core/widgets/componants/custom_text.dart';
-import 'package:market/core/constants/colors.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:market/core/themes/colors.dart';
+import 'package:market/core/themes/styles.dart';
 
 class CustomButton extends StatelessWidget {
-  final void Function()? onPressed;
   final String text;
-  const CustomButton({super.key, required this.text, required this.onPressed});
+  final bool isLoading;
+  final void Function()? onPressed;
+  final Color? backgroundColor;
+  const CustomButton(
+      {Key? key,
+      required this.text,
+      required this.onPressed,
+      this.isLoading = false,
+      this.backgroundColor = primaryColor})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        backgroundColor: buttonColor,
-        padding: const EdgeInsets.all(14),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
-        fixedSize: const Size(347, 53),
-      ),
-      onPressed: onPressed,
-      child: CustomText(
-        text: text,
-        color: Colors.white,
-        fontSize: 14,
-      ),
-    );
+        onPressed: onPressed,
+        style: ElevatedButton.styleFrom(
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            backgroundColor: backgroundColor,
+            elevation: 10,
+            fixedSize: Size(MediaQuery.of(context).size.width, 40)),
+        child: isLoading
+            ? const SpinKitDualRing(
+                color: Colors.white,
+                lineWidth: 2,
+                size: 30,
+              )
+            : Text(
+                text,
+                style: Styles.textStyle18,
+              ));
   }
 }

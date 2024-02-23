@@ -1,7 +1,7 @@
 // ignore_for_file: must_be_immutable
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:market/core/constants/colors.dart';
+import 'package:market/core/themes/colors.dart';
 
 class CustomTextFromField extends StatefulWidget {
   CustomTextFromField(
@@ -21,7 +21,7 @@ class CustomTextFromField extends StatefulWidget {
   bool obscureText;
   final String hintText;
   final double iconSize = 16;
-  final Color iconColor = mainColor;
+  final Color iconColor = primaryColor;
   @override
   State<CustomTextFromField> createState() => _CustomTextFromFieldState();
 }
@@ -41,7 +41,7 @@ class _CustomTextFromFieldState extends State<CustomTextFromField> {
             prefixIcon: Icon(
               widget.prefixIcon,
               size: widget.iconSize,
-              color: mainColor,
+              color: primaryColor,
             ),
             suffixIcon: widget.suffixIcon != null
                 ? IconButton(
@@ -54,7 +54,7 @@ class _CustomTextFromFieldState extends State<CustomTextFromField> {
                             Icons.visibility_off,
                             size: widget.iconSize,
                           ),
-                    color: mainColor,
+                    color: primaryColor,
                     onPressed: () {
                       setState(() {
                         widget.obscureText = !widget.obscureText;

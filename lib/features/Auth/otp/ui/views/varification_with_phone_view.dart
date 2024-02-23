@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:market/core/constants/assets.dart';
-import 'package:market/core/constants/colors.dart';
-import 'package:market/core/widgets/componants/custom_text.dart';
+import 'package:market/core/themes/colors.dart';
+import 'package:market/core/themes/styles.dart';
 import 'package:market/core/widgets/custom_button.dart';
 
 import 'widgets/app_bar.dart';
@@ -32,11 +32,9 @@ class _VerificationPhoneViewState extends State<VerificationPhoneView> {
                   Assets.assetsImagesIllustrationVerificationCodeWithPhone),
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 47, vertical: 22),
-                child: CustomText(
-                  color: navyColor,
-                  fontSize: 14,
-                  text:
-                      'Please enter the 4 digit code \n     sent to: +20 1501142409',
+                child: Text(
+                  'Please enter the 4 digit code \n     sent to: +20 1501142409',
+                  style: Styles.textStyle14,
                 ),
               ),
               const PinCode(),
@@ -53,17 +51,15 @@ class _VerificationPhoneViewState extends State<VerificationPhoneView> {
               ),
               const Padding(
                 padding: EdgeInsets.symmetric(vertical: 22.0),
-                child: CustomText(
-                  text: "00.40",
-                  fontSize: 16,
-                  color: navyColor,
+                child: Text(
+                  "00.40",
+                  style: Styles.textStyle16,
                 ),
               ),
               TextButton(
-                  child: const CustomText(
-                    text: 'Resend Code',
-                    color: buttonColor,
-                    fontSize: 16,
+                  child: Text(
+                    'Resend Code',
+                    style: Styles.textStyle16.copyWith(color: buttonColor),
                   ),
                   onPressed: () {})
             ],
