@@ -29,7 +29,7 @@ Map<String, Widget Function(BuildContext)> routes = {
   Routes.home: (context) => const HomeView(),
   Routes.login: (context) => const LoginView(),
   Routes.register: (context) => const RegisterView(),
-  Routes.verificationEmail: (context) => VarificationEmailView(),
+  Routes.verificationEmail: (context) => const VarificationEmailView(),
   Routes.verificationPhone: (context) => const VerificationPhoneView(),
   Routes.forgetPasswordWithEmail: (context) =>
       const ForgetPasswordWithEmailView(),
