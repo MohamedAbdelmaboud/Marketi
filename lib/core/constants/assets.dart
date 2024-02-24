@@ -5,14 +5,6 @@ class Assets {
   /// assets/images/adidas.png
   static const String assetsImagesAdidas = "assets/images/adidas.png";
 
-  /// Assets for assetsImagesAdidasSeeklogo
-  /// assets/images/adidas-seeklogo.eps
-  static const String assetsImagesAdidasSeeklogo = "assets/images/adidas-seeklogo.eps";
-
-  /// Assets for assetsImagesAdidasVectorLogoSeeklogo
-  /// assets/images/adidas-vector-logo-seeklogo.zip
-  static const String assetsImagesAdidasVectorLogoSeeklogo = "assets/images/adidas-vector-logo-seeklogo.zip";
-
   /// Assets for assetsImagesAirBudsPic
   /// assets/images/Air_Buds_Pic.png
   static const String assetsImagesAirBudsPic = "assets/images/Air_Buds_Pic.png";
@@ -32,14 +24,6 @@ class Assets {
   /// Assets for assetsImagesCanon
   /// assets/images/canon.png
   static const String assetsImagesCanon = "assets/images/canon.png";
-
-  /// Assets for assetsImagesCanonSeeklogo
-  /// assets/images/canon-seeklogo.eps
-  static const String assetsImagesCanonSeeklogo = "assets/images/canon-seeklogo.eps";
-
-  /// Assets for assetsImagesCanonVectorLogoSeeklogo
-  /// assets/images/canon-vector-logo-seeklogo.zip
-  static const String assetsImagesCanonVectorLogoSeeklogo = "assets/images/canon-vector-logo-seeklogo.zip";
 
   /// Assets for assetsImagesFashion
   /// assets/images/fashion.jpg

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:market/core/themes/colors.dart';
 import 'package:market/core/themes/styles.dart';
 import 'package:market/features/home/data/category_model.dart';
 
@@ -23,12 +24,15 @@ class CategoryItem extends StatelessWidget {
             borderRadius: BorderRadius.circular(14),
             color: const Color(0xFFFFFFFF),
           ),
-          child: Image.asset(categoryModel.imagePath,height: 80,),
+          child: Image.asset(
+            categoryModel.imagePath,
+            height: 80,
+          ),
         ),
         Text(
           categoryModel.title,
           style: Styles.textStyle14.copyWith(
-            color: const Color.fromARGB(255, 85, 143, 250),
+            color: myBlue,
           ),
         )
       ],

@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:market/core/constants/assets.dart';
 import 'package:market/core/themes/colors.dart';
+import 'package:market/features/home/data/brand_model.dart';
 
 class BrandItem extends StatelessWidget {
   const BrandItem({
-    super.key,
-  });
+    required this.brandModel,
+    Key? key,
+  }) : super(key: key);
+
+  final BrandModel brandModel;
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +19,7 @@ class BrandItem extends StatelessWidget {
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
-            color: primaryColor.withOpacity(0.4),
+            color: primaryColor.withOpacity(0.1),
             spreadRadius: 1,
             blurRadius: 1,
             offset: const Offset(0, 3),
@@ -27,7 +30,8 @@ class BrandItem extends StatelessWidget {
         color: const Color(0xFFFFFFFF),
       ),
       child: Image.asset(
-        Assets.assetsImagesJBLLogo2,
+        brandModel.imagePath,
+        height: 80,
       ),
     );
   }

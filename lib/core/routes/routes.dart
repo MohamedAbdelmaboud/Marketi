@@ -5,7 +5,7 @@ import 'package:market/features/Auth/otp/ui/views/forget_with_phone_view.dart';
 import 'package:market/features/Auth/otp/ui/views/varification_with_email_view.dart';
 import 'package:market/features/Auth/otp/ui/views/varification_with_phone_view.dart';
 import 'package:market/features/Auth/register/ui/views/register_view.dart';
-import 'package:market/features/home/ui/views/home_view.dart';
+import 'package:market/features/lay/home/ui/views/home_view.dart';
 import 'package:market/features/intro/ui/views/introduction_view.dart';
 import 'package:market/features/splash/ui/views/splash_view.dart';
 
