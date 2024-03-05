@@ -5,8 +5,9 @@ import 'package:market/features/Auth/otp/ui/views/forget_with_phone_view.dart';
 import 'package:market/features/Auth/otp/ui/views/varification_with_email_view.dart';
 import 'package:market/features/Auth/otp/ui/views/varification_with_phone_view.dart';
 import 'package:market/features/Auth/register/ui/views/register_view.dart';
-import 'package:market/features/lay/home/ui/views/home_view.dart';
 import 'package:market/features/intro/ui/views/introduction_view.dart';
+import 'package:market/features/layout/home/ui/views/all_brands_view.dart';
+import 'package:market/features/layout/home/ui/views/home_view.dart';
 import 'package:market/features/splash/ui/views/splash_view.dart';
 
 class Routes {
@@ -19,6 +20,7 @@ class Routes {
   static const String verificationPhone = '/VarificationPhoneView';
   static const String forgetPasswordWithEmail = '/ForgetPasswordWithEmailView';
   static const String forgetPasswordWithPhone = '/ForgetPasswordWithPhoneView';
+  static const String brands = '/AllBrandsView';
 }
 
 // ...
@@ -35,4 +37,5 @@ Map<String, Widget Function(BuildContext)> routes = {
       const ForgetPasswordWithEmailView(),
   Routes.forgetPasswordWithPhone: (context) =>
       const ForgetPasswordWithPhoneView(),
+  Routes.brands: (context) => const AllBrandsView()
 };

@@ -5,7 +5,7 @@ class FavouriteButton extends StatelessWidget {
 
   const FavouriteButton({
     super.key,
-    this.isFavourite = false,
+    this.isFavourite = true,
   });
 
   @override

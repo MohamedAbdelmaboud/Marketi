@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:market/core/themes/colors.dart';
 import 'package:market/core/themes/styles.dart';
 import 'package:market/features/Auth/otp/ui/views/widgets/app_bar.dart';
-import 'package:market/features/home/data/product_model.dart';
-import 'package:market/features/home/ui/views/widgets/serach_field.dart';
+import 'package:market/features/layout//home/data/product_model.dart';
+import 'package:market/features/layout//home/ui/views/widgets/serach_field.dart';
 
 import 'widgets/product_item.dart';
+import 'widgets/products_grid_view.dart';
 
 class PopularProductView extends StatelessWidget {
   const PopularProductView({super.key});
@@ -26,24 +27,9 @@ class PopularProductView extends StatelessWidget {
                 'All Products',
                 style: Styles.textStyle18.copyWith(color: seconderyColor),
               ),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 8.0),
-                child: GridView.builder(
-                  shrinkWrap: true,
-                  physics: const NeverScrollableScrollPhysics(),
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    childAspectRatio: 165 / 190,
-                    mainAxisSpacing: 10,
-                    crossAxisSpacing: 10,
-                  ),
-                  itemCount: 10,
-                  itemBuilder: (BuildContext context, int index) {
-                    return ProductItem(
-                      productModel: products[index],
-                    );
-                  },
-                ),
+              const Padding(
+                padding: EdgeInsets.only(bottom: 8.0),
+                child: ProductsGridView(),
               ),
             ],
           ),

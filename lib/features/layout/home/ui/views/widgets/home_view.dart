@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:market/features/home/data/brand_model.dart';
-import 'package:market/features/home/ui/views/widgets/brand_item.dart';
+import 'package:market/features/layout/home/data/brand_model.dart';
+import 'package:market/features/layout/home/ui/views/widgets/brand_item.dart';
 
 class BrandsListView extends StatelessWidget {
   const BrandsListView({
@@ -17,7 +17,7 @@ class BrandsListView extends StatelessWidget {
           width: 5,
         ),
         scrollDirection: Axis.horizontal,
-        itemCount: brands.length,
+        itemCount: 4,
         itemBuilder: (context, index) => BrandItem(
           brandModel: brands[index],
         ),

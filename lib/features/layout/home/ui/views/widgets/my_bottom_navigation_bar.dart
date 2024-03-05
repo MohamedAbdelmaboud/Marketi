@@ -25,7 +25,7 @@ class MyBottomNavigationBar extends StatelessWidget {
       ],
       color: myBlue,
       buttonBackgroundColor: myBlue,
-      backgroundColor: Colors.white,
+       backgroundColor: Colors.white.withOpacity(0.1),
       animationCurve: Curves.decelerate,
       animationDuration: const Duration(milliseconds: 300),
       onTap: onTap,

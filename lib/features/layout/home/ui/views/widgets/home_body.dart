@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:market/core/constants/assets.dart';
-import 'package:market/features/home/ui/views/widgets/best_list_view.dart';
-import 'package:market/features/home/ui/views/widgets/categories_grid_view.dart';
-import 'package:market/features/home/ui/views/widgets/custom_row.dart';
-import 'package:market/features/home/ui/views/widgets/home_app_bar.dart';
-import 'package:market/features/home/ui/views/widgets/home_view.dart';
-import 'package:market/features/home/ui/views/widgets/popular_list_view.dart';
-import 'package:market/features/home/ui/views/widgets/serach_field.dart';
+import 'package:market/core/routes/routes.dart';
+import 'package:market/features/layout/home/ui/views/widgets/best_list_view.dart';
+import 'package:market/features/layout/home/ui/views/widgets/categories_grid_view.dart';
+import 'package:market/features/layout/home/ui/views/widgets/custom_row.dart';
+import 'package:market/features/layout/home/ui/views/widgets/home_app_bar.dart';
+import 'package:market/features/layout/home/ui/views/widgets/home_view.dart';
+import 'package:market/features/layout/home/ui/views/widgets/popular_list_view.dart';
+import 'package:market/features/layout/home/ui/views/widgets/serach_field.dart';
 
 class HomeBody extends StatelessWidget {
   const HomeBody({
@@ -39,8 +40,11 @@ class HomeBody extends StatelessWidget {
                 title: 'Best for You 💙',
               ),
               const BestListView(),
-              const CustomRow(
+              CustomRow(
                 title: 'Brands',
+                onPressed: () {
+                  Navigator.pushNamed(context, Routes.brands);
+                },
               ),
               const BrandsListView(),
             ],

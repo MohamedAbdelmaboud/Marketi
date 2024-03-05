@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:market/core/themes/colors.dart';
 import 'package:market/core/themes/styles.dart';
-import 'package:market/features/home/data/category_model.dart';
+import 'package:market/features/layout/home/data/category_model.dart';
 
 class CategoryItem extends StatelessWidget {
   final CategoryModel categoryModel;

@@ -13,6 +13,10 @@ class Assets {
   /// assets/images/Ankle_Boots.png
   static const String assetsImagesAnkleBoots = "assets/images/Ankle_Boots.png";
 
+  /// Assets for assetsImagesApple
+  /// assets/images/apple.png
+  static const String assetsImagesApple = "assets/images/apple.png";
+
   /// Assets for assetsImagesBell
   /// assets/images/bell.svg
   static const String assetsImagesBell = "assets/images/bell.svg";
@@ -24,6 +28,14 @@ class Assets {
   /// Assets for assetsImagesCanon
   /// assets/images/canon.png
   static const String assetsImagesCanon = "assets/images/canon.png";
+
+  /// Assets for assetsImagesCk
+  /// assets/images/ck.png
+  static const String assetsImagesCk = "assets/images/ck.png";
+
+  /// Assets for assetsImagesDell
+  /// assets/images/dell.png
+  static const String assetsImagesDell = "assets/images/dell.png";
 
   /// Assets for assetsImagesFashion
   /// assets/images/fashion.jpg
@@ -40,6 +52,10 @@ class Assets {
   /// Assets for assetsImagesHeadphones
   /// assets/images/Headphones.png
   static const String assetsImagesHeadphones = "assets/images/Headphones.png";
+
+  /// Assets for assetsImagesHp
+  /// assets/images/hp.png
+  static const String assetsImagesHp = "assets/images/hp.png";
 
   /// Assets for assetsImagesIPhone11Pro
   /// assets/images/iPhone_11_Pro.png
@@ -132,6 +148,10 @@ class Assets {
   /// Assets for assetsImagesPlant
   /// assets/images/Plant.jpg
   static const String assetsImagesPlant = "assets/images/Plant.jpg";
+
+  /// Assets for assetsImagesPuma
+  /// assets/images/puma.png
+  static const String assetsImagesPuma = "assets/images/puma.png";
 
   /// Assets for assetsImagesSONYLogo2
   /// assets/images/SONY_Logo_2.png

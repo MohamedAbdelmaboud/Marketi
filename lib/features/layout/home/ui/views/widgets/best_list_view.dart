@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:market/features/home/data/product_model.dart';
-import 'package:market/features/home/ui/views/widgets/product_item.dart';
+import 'package:market/features/layout/home/data/product_model.dart';
+import 'package:market/features/layout/home/ui/views/widgets/product_item.dart';
 
 class BestListView extends StatelessWidget {
   const BestListView({

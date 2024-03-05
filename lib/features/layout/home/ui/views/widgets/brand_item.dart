@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:market/core/themes/colors.dart';
-import 'package:market/features/home/data/brand_model.dart';
+import 'package:market/features/layout/home/data/brand_model.dart';
 
 class BrandItem extends StatelessWidget {
   const BrandItem({
@@ -31,7 +31,7 @@ class BrandItem extends StatelessWidget {
       ),
       child: Image.asset(
         brandModel.imagePath,
-        height: 80,
+       
       ),
     );
   }

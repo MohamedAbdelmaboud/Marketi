@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:market/core/themes/colors.dart';
 import 'package:market/core/themes/styles.dart';
-import 'package:market/features/home/data/product_model.dart';
-import 'package:market/features/home/ui/views/widgets/favourite_button.dart';
+import 'package:market/features/layout/home/data/product_model.dart';
+import 'package:market/features/layout/home/ui/views/widgets/favourite_button.dart';
 
 import 'add_button.dart';
 import 'discount_container.dart';
@@ -102,7 +102,7 @@ class ProductItem extends StatelessWidget {
                     child: Text(
                       productModel.title,
                       overflow: TextOverflow.ellipsis,
-                      maxLines: 1,    
+                      maxLines: 1,
                       style: Styles.textStyle12.copyWith(
                         color: seconderyColor,
                         fontWeight: FontWeight.w400,
